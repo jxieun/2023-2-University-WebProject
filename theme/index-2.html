@@ -18,10 +18,56 @@
             </hgroup>
         </header>
 
-        <!-- Navigation (Simplified for sub-pages) -->
-        <nav id="main-navigation" style="justify-content: center;">
-            <a href="../index.html" class="menu-title" style="background: var(--primary-color); color: white;">🏠 홈으로
-                돌아가기</a>
+        <!-- Navigation -->
+        <nav id="main-navigation">
+            <div class="pull-left">
+                <ul class="outer-menu">
+                    <li class="outer-menu-item">
+                        <span class="menu-title" onclick="location.href='../index.html'">홈</span>
+                    </li>
+                    <li class="outer-menu-item">
+                        <span class="menu-title">장르</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="../genre/index-1.html">장르별 Music</a></li>
+                        </ul>
+                    </li>
+                    <li class="outer-menu-item">
+                        <span class="menu-title">주제별</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="../theme/index-2.html">주제별 Music</a></li>
+                        </ul>
+                    </li>
+                    <li class="outer-menu-item">
+                        <span class="menu-title">신곡</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="../pages/IN.html">국내</a></li>
+                            <li class="inner-menu-item"><a href="../pages/OUT.html">해외</a></li>
+                        </ul>
+                    </li>
+                    <li class="outer-menu-item">
+                        <span class="menu-title">추천</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="../pages/Re.html">사람들이 추천하는 노래는?!</a></li>
+                            <li class="inner-menu-item"><a href="../pages/Top10.html">이달의 음악 TOP10</a></li>
+                            <li class="inner-menu-item"><a href="../pages/Today.html">오늘의 음악</a></li>
+                        </ul>
+                    </li>
+                    <li class="outer-menu-item">
+                        <span class="menu-title">노래투표</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="../pages/vote.html">투표하기</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="pull-right">
+                <div class="search-bar">
+                    <form>
+                        <input type="text" class="input-search">
+                        <input type="submit" class="input-search-submit" value="검색">
+                    </form>
+                </div>
+            </div>
         </nav>
 
         <div id="content" style="display: block;">

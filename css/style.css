@@ -91,9 +91,9 @@ body {
 
 /* Dropdown Menu */
 .inner-menu {
-    display: none;
+    display: none; /* Hidden by default */
     position: absolute;
-    top: 45px;
+    top: 100%; /* Position right below the parent */
     left: 0;
     width: 160px;
     background: var(--text-white);
@@ -101,6 +101,12 @@ body {
     border-radius: 10px;
     overflow: hidden;
     z-index: 1000;
+    padding-top: 5px; /* Slight buffer inside */
+}
+
+/* Show dropdown on hover (CSS only, no JS needed) */
+.outer-menu-item:hover .inner-menu {
+    display: block;
 }
 
 .inner-menu-item a {
@@ -339,4 +345,52 @@ article:hover {
 .scroll-item p {
     font-size: 0.9rem;
     color: #666;
+}
+
+/* Music Chart List */
+.chart-list {
+    list-style: none;
+}
+
+.chart-item {
+    display: flex;
+    align-items: center;
+    background: var(--text-white);
+    border: 1px solid #eee;
+    padding: 15px 20px;
+    margin-bottom: 15px;
+    border-radius: var(--border-radius);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.chart-item:hover {
+    transform: translateX(5px);
+    box-shadow: var(--shadow);
+    border-color: var(--primary-color);
+}
+
+.chart-rank {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--secondary-color);
+    margin-right: 20px;
+    width: 30px;
+    text-align: center;
+}
+
+.chart-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.chart-title {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.chart-artist {
+    font-size: 0.9rem;
+    color: #888;
 }

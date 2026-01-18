@@ -1,13 +1,10 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>해외 신곡</title>
+    <link rel="stylesheet" href="../css/style.css">
     <style>
-        h1 {
-            color : black;
-            text-shadow: 5px 5px 5px #0FF5F5;
-        }
-        h2:active { color : greenyellow}
         body {
             background-image: url('Orange.jpg');
             background-size: 100% 50%;
@@ -16,12 +13,139 @@
             background-position: bottom;
         }
     </style>
+</head>
+
 <body>
-    <h1>해외 신곡</h1>
-    <h2>1. Grown Woman-Beyonce</h2>
-    <h2>2. Don't Need to sleep-John Legend</h2>
-    <h2>3. Winter Wonderland-Laufey</h2>
-    <h2>4. COMPANY-Unusual Demont</h2>
-    <h2>5. Dilemma-Green Day </h2>
-    <h2>6. I DO-Coby James</h2>
-    <h2>7. Eras Of Us-FLETCHER</h2>
+    <div id="page-wrapper">
+        <header id="main-header">
+            <hgroup>
+                <i>
+                    <h1 class="master-title"><ins>MusicStory</ins></h1>
+                </i>
+                <br>
+                <h2 class="master-description">실시간 해외 신곡 차트 🌏</h2>
+            </hgroup>
+        </header>
+
+        <!-- Navigation -->
+        <nav id="main-navigation">
+            <div class="pull-left">
+                <ul class="outer-menu">
+                    <li class="outer-menu-item">
+                        <span class="menu-title" onclick="location.href='../index.html'">홈</span>
+                    </li>
+                    <li class="outer-menu-item">
+                        <span class="menu-title">장르</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="../genre/index-1.html">장르별 Music</a></li>
+                        </ul>
+                    </li>
+                    <li class="outer-menu-item">
+                        <span class="menu-title">주제별</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="../theme/index-2.html">주제별 Music</a></li>
+                        </ul>
+                    </li>
+                    <li class="outer-menu-item">
+                        <span class="menu-title">신곡</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="../pages/IN.html">국내</a></li>
+                            <li class="inner-menu-item"><a href="../pages/OUT.html">해외</a></li>
+                        </ul>
+                    </li>
+                    <li class="outer-menu-item">
+                        <span class="menu-title">추천</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="../pages/Re.html">사람들이 추천하는 노래는?!</a></li>
+                            <li class="inner-menu-item"><a href="../pages/Top10.html">이달의 음악 TOP10</a></li>
+                            <li class="inner-menu-item"><a href="../pages/Today.html">오늘의 음악</a></li>
+                        </ul>
+                    </li>
+                    <li class="outer-menu-item">
+                        <span class="menu-title">노래투표</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="../pages/vote.html">투표하기</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="pull-right">
+                <div class="search-bar">
+                    <form>
+                        <input type="text" class="input-search">
+                        <input type="submit" class="input-search-submit" value="검색">
+                    </form>
+                </div>
+            </div>
+        </nav>
+
+        <div id="content" style="display: block; max-width: 800px; margin: 0 auto;">
+            <article>
+                <div class="article-header">
+                    <h1 class="article-title">🔥 해외 인기 신곡 TOP 7</h1>
+                </div>
+                <div class="article-body">
+                    <ul class="chart-list">
+                        <li class="chart-item">
+                            <span class="chart-rank">1</span>
+                            <div class="chart-info">
+                                <span class="chart-title">Grown Woman</span>
+                                <span class="chart-artist">Beyonce</span>
+                            </div>
+                        </li>
+                        <li class="chart-item">
+                            <span class="chart-rank">2</span>
+                            <div class="chart-info">
+                                <span class="chart-title">Don't Need to sleep</span>
+                                <span class="chart-artist">John Legend</span>
+                            </div>
+                        </li>
+                        <li class="chart-item">
+                            <span class="chart-rank">3</span>
+                            <div class="chart-info">
+                                <span class="chart-title">Winter Wonderland</span>
+                                <span class="chart-artist">Laufey</span>
+                            </div>
+                        </li>
+                        <li class="chart-item">
+                            <span class="chart-rank">4</span>
+                            <div class="chart-info">
+                                <span class="chart-title">COMPANY</span>
+                                <span class="chart-artist">Unusual Demont</span>
+                            </div>
+                        </li>
+                        <li class="chart-item">
+                            <span class="chart-rank">5</span>
+                            <div class="chart-info">
+                                <span class="chart-title">Dilemma</span>
+                                <span class="chart-artist">Green Day</span>
+                            </div>
+                        </li>
+                        <li class="chart-item">
+                            <span class="chart-rank">6</span>
+                            <div class="chart-info">
+                                <span class="chart-title">I DO</span>
+                                <span class="chart-artist">Coby James</span>
+                            </div>
+                        </li>
+                        <li class="chart-item">
+                            <span class="chart-rank">7</span>
+                            <div class="chart-info">
+                                <span class="chart-title">Eras Of Us</span>
+                                <span class="chart-artist">FLETCHER</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </article>
+        </div>
+
+        <footer id="main-footer">
+            <a href="../pages/Introduce.html">MusicStory에 대해서 궁금하다면?</a>
+            <br>
+            <a href="#">Created by 행정학과, 1반, 20180648, 김지은</a>
+        </footer>
+    </div>
+</body>
+
+</html>

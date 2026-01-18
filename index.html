@@ -5,15 +5,7 @@
     <title>MusicStory</title>
     <link rel="stylesheet" href="css/style.css">
     <script src="https://code.jquery.com/jquery-3.6.4.js"></script>
-    <script>
-        $(document).ready(function () {
-            $('.outer-menu-item').hover(function () {
-                $(this).find('.inner-menu').show();
-            }, function () {
-                $(this).find('.inner-menu').hide();
-            });
-        });
-    </script>
+    <!-- jQuery hover script removed in favor of CSS :hover -->
     <script>
         //경고창 출력 p.60 (첫 방문 시에만 출력)
         if (!localStorage.getItem('visited')) {
@@ -37,6 +29,9 @@
         <nav id="main-navigation">
             <div class="pull-left">
                 <ul class="outer-menu">
+                    <li class="outer-menu-item">
+                        <span class="menu-title" onclick="location.href='index.html'">홈</span>
+                    </li>
                     <li class="outer-menu-item">
                         <span class="menu-title">장르</span>
                         <ul class="inner-menu">

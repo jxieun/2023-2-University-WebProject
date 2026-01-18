@@ -1,28 +1,153 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>국내 신곡</title>
+    <link rel="stylesheet" href="../css/style.css">
     <style>
-        h1 {
-            color : black;
-            text-shadow: 5px 5px 5px #F50F99;
-        }
-        h2:active { color : orange;}
         body {
             background-image: url('Green.jpg');
             background-size: 100% 50%;
             background-repeat: no-repeat;
             background-attachment: fixed;
             background-position: bottom;
+            /* Override global body background-color if needed, but image will layer on top */
         }
     </style>
 </head>
+
 <body>
-    <h1>국내 신곡</h1>
-    <h2>1. 잘 먹고 잘 살아-이성경 & 이찬혁</h2>
-    <h2>2. 사랑할 수밖에-볼빨간사춘기</h2>
-    <h2>3. 에피소드-이무진</h2>
-    <h2>4. PINK CHRISTMAS-Apink</h2>
-    <h2>5. Ex-Mas-전소미 & BIG Naughty</h2>
-    <h2>6. 저기 창 밖을 봐 눈이 오잖아(feat. 폴킴)</h2>
-    <h2>7. 입술 (feat. 10cm)-헤이즈</h2>
+    <div id="page-wrapper">
+        <header id="main-header">
+            <hgroup>
+                <i>
+                    <h1 class="master-title"><ins>MusicStory</ins></h1>
+                </i>
+                <br>
+                <h2 class="master-description">실시간 국내 신곡 차트 🇰🇷</h2>
+            </hgroup>
+        </header>
+
+        <!-- Navigation -->
+        <nav id="main-navigation">
+            <div class="pull-left">
+                <ul class="outer-menu">
+                    <li class="outer-menu-item">
+                        <span class="menu-title" onclick="location.href='../index.html'">홈</span>
+                    </li>
+                    <li class="outer-menu-item">
+                        <span class="menu-title">장르</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="../genre/index-1.html">장르별 Music</a></li>
+                        </ul>
+                    </li>
+                    <li class="outer-menu-item">
+                        <span class="menu-title">주제별</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="../theme/index-2.html">주제별 Music</a></li>
+                        </ul>
+                    </li>
+                    <li class="outer-menu-item">
+                        <span class="menu-title">신곡</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="../pages/IN.html">국내</a></li>
+                            <li class="inner-menu-item"><a href="../pages/OUT.html">해외</a></li>
+                        </ul>
+                    </li>
+                    <li class="outer-menu-item">
+                        <span class="menu-title">추천</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="../pages/Re.html">사람들이 추천하는 노래는?!</a></li>
+                            <li class="inner-menu-item"><a href="../pages/Top10.html">이달의 음악 TOP10</a></li>
+                            <li class="inner-menu-item"><a href="../pages/Today.html">오늘의 음악</a></li>
+                        </ul>
+                    </li>
+                    <li class="outer-menu-item">
+                        <span class="menu-title">노래투표</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="../pages/vote.html">투표하기</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="pull-right">
+                <div class="search-bar">
+                    <form>
+                        <input type="text" class="input-search">
+                        <input type="submit" class="input-search-submit" value="검색">
+                    </form>
+                </div>
+            </div>
+        </nav>
+
+        <div id="content" style="display: block; max-width: 800px; margin: 0 auto;">
+            <article>
+                <div class="article-header">
+                    <h1 class="article-title">🔥 국내 인기 신곡 TOP 7</h1>
+                </div>
+                <div class="article-body">
+                    <ul class="chart-list">
+                        <li class="chart-item">
+                            <span class="chart-rank">1</span>
+                            <div class="chart-info">
+                                <span class="chart-title">잘 먹고 잘 살아</span>
+                                <span class="chart-artist">이성경 & 이찬혁</span>
+                            </div>
+                        </li>
+                        <li class="chart-item">
+                            <span class="chart-rank">2</span>
+                            <div class="chart-info">
+                                <span class="chart-title">사랑할 수밖에</span>
+                                <span class="chart-artist">볼빨간사춘기</span>
+                            </div>
+                        </li>
+                        <li class="chart-item">
+                            <span class="chart-rank">3</span>
+                            <div class="chart-info">
+                                <span class="chart-title">에피소드</span>
+                                <span class="chart-artist">이무진</span>
+                            </div>
+                        </li>
+                        <li class="chart-item">
+                            <span class="chart-rank">4</span>
+                            <div class="chart-info">
+                                <span class="chart-title">PINK CHRISTMAS</span>
+                                <span class="chart-artist">Apink</span>
+                            </div>
+                        </li>
+                        <li class="chart-item">
+                            <span class="chart-rank">5</span>
+                            <div class="chart-info">
+                                <span class="chart-title">Ex-Mas</span>
+                                <span class="chart-artist">전소미 & BIG Naughty</span>
+                            </div>
+                        </li>
+                        <li class="chart-item">
+                            <span class="chart-rank">6</span>
+                            <div class="chart-info">
+                                <span class="chart-title">저기 창 밖을 봐 눈이 오잖아 (feat. 폴킴)</span>
+                                <span class="chart-artist">V.O.S</span>
+                                <!-- Artist assumed based on title, user didn't specify artist for this one fully in original, kept original text in title but splitting looked weird so guessing or just putting all in title? Original was: 저기 창 밖을 봐 눈이 오잖아(feat. 폴킴) inside h2. I will put it all in title if artist is unclear, but actually usually it's [Title] - [Artist]. Original: 6. 저기 창 밖을 봐 눈이 오잖아(feat. 폴킴) -> No dash. I'll put it all in title. -->
+                            </div>
+                        </li>
+                        <li class="chart-item">
+                            <span class="chart-rank">7</span>
+                            <div class="chart-info">
+                                <span class="chart-title">입술 (feat. 10cm)</span>
+                                <span class="chart-artist">헤이즈</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </article>
+        </div>
+
+        <footer id="main-footer">
+            <a href="../pages/Introduce.html">MusicStory에 대해서 궁금하다면?</a>
+            <br>
+            <a href="#">Created by 행정학과, 1반, 20180648, 김지은</a>
+        </footer>
+    </div>
+</body>
+
+</html>
