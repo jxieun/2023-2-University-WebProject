@@ -1,145 +1,214 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>오늘의 음악</title>
+    <link rel="stylesheet" href="../css/style.css">
     <style>
-        h1 {
-            color : plum;
-            text-shadow: 5px 5px 5px #EF2160;
-        }
-        h2 { color : white;}
-        h3 { color : white; }
-        p { color : blue;}
-        p:hover { color : pink; }
         body {
             background-image: url('Tree.jpg');
             background-size: 100% 30%;
+            /* Original size as requested */
             background-repeat: no-repeat;
             background-attachment: fixed;
         }
-        h4 { color : white; }
 
+        .lyrics-container {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .lyrics-title {
+            font-size: 2rem;
+            color: var(--secondary-color);
+            margin-bottom: 5px;
+            text-shadow: 2px 2px 0px #FFE0EE;
+        }
+
+        .lyrics-artist {
+            font-size: 1.2rem;
+            color: #888;
+            margin-bottom: 30px;
+            font-style: italic;
+        }
+
+        .usage-section {
+            background-color: var(--accent-color);
+            padding: 10px 20px;
+            border-radius: 20px;
+            display: inline-block;
+            margin-bottom: 20px;
+            font-weight: bold;
+            color: var(--secondary-color);
+        }
+
+        .lyrics-text {
+            line-height: 1.8;
+            font-size: 1rem;
+            color: #555;
+            margin-bottom: 30px;
+        }
+
+        .lyrics-text p {
+            margin-bottom: 20px;
+        }
+
+        .lyrics-text:hover {
+            color: var(--secondary-color);
+        }
     </style>
 </head>
+
 <body>
-    <h1>오늘의 음악!!</h1>
-    <hr>
-    <h2>All l Want for Christmas Is YOU</h2>
-    <h3>-Mariah Carey-</h3>
-    <br>
-    <h4>>>>가사</h4>
-    <p>I don′t want a lot for Christmas
-    <br>   
-    난 크리스마스에 많은 걸 원하지 않아
-    <br>   
-    There′s just one thing I need
-    <br>    
-    내게 필요한 건 단 한가지 뿐
-    <br>    
-    I don′t care about the presents underneath the Christmas tree
-    <br>    
-    크리스마스 트리 아래 선물 따윈 관심 없어요
-    <br>    
-    I just want you for my own more than you could ever know
-    <br>    
-    당신이 알고 있는 것보다 더 당신을 원해요
-    <br>    
-    Make my wish come true
-    <br> 
-    소원을 빌어
-    <br>    
-    All I want for Christmas Is you
-    <br>  
-    내가 크리스마스에 원하는건 당신뿐</p>
-    <br>
-    <p> I don′t want a lot for Christmas
-    <br>   
-    There's just one thing I need
-    <br>
-    (and I)I don′t care about presents underneath the Christmas tree
-    <br>
-    I don′t need to hang my stocking there upon the fireplace
-    <br>
-    난 벽난로 위에 내 양말을 걸어 놓을 필요 없어
-    <br>   
-    Santa Claus won′t make me happy with a toy on Christmas day
-    <br>
-    산타클로스 할아버지도 크리스마스 장난감으로 날 기쁘게 만들 수 없을 거야
-    <br>   
-    I just want you for my own more than you could ever know
-    <br>
-    Make my wish come true
-    <br>
-    All I want for Christmas is you
-    <br>
-    You baby</p>
-    <br>
-    <p>I won′t ask for much this Christmas 
-    <br>
-    난 이번 크리스마스에 많은 걸 요구하지 않아
-    <br>
-    I won′t even wish for snow
-    <br>  
-    난 눈을 내려달라고 빌지도 않을 거야
-    <br>  
-    (and I)I′m just gonna keep on waiting underneath the mistletoe
-    <br>
-    난 그냥 미슬토우 밑에서 계속 기다리기만 할 거에요
-    <br>  
-    I won′t make a list and send it to the North Pole for Saint Nick
-    <br>
-    난 북극에 있는 산타크로스(성니콜라스)에게 선물 목록을 만들어 보내지도 않을 거야
-    <br> 
-    I won′t even stay awake to hear those magic reindeer click
-    <br>  
-    난 순록의 발 소릴 들으려 깨어있지도 않을 거야
-    <br> 
-    Cause I just want you here tonight holding on to me so tight
-   <br> 
-    난 바로 오늘 밤 여기서 당신을 안아주고 싶으니까
-    <br>  
-    What more can I do
-    <br>
-    내가 뭘 더 할 수 있을까요
-    <br>
-    Baby all I want for Christmas is you
-    <br>
-    You...(baby)</p>
-    <br>
-    <p>All the lights are shining so brightly everywhere
-   <br>
-    모든 빛이 모든 곳에서 밝게 빛나고 있어
-    <br>
-    And the sound of children′s laughter fills the air
-    <br>
-    어린 아이들의 웃음 소리가 하늘을 가득 채워요
-    <br>
-   And everyone is singing
-   <br>
-    모두가 노랠 부르고 있죠
-    <br>
-    I hear those sleigh bells ringing Santa won′t you bring me the one I really need
-    <br>
-    산타할어버지 내게 정말로 필요한 사람을 데려다주시지 않으실래요?
-    <br>
-    won′t you please bring my baby to me quickly
-    <br>
-    내 사랑을 제발 데려와 주시지 않으실래요?</p>
-    <br>
-    <p>Oh I don′t want a lot for Christmas
-    <br>
-    This is all I′m asking for
-    <br>
-    내가 원하는 건 이것 뿐
-    <br> 
-     I just wanna see my baby standing right outside my door
-    <br>
-    난 그저 내 현관문 밖에 서 있을 내 사랑을 보고 싶을 뿐이야
-    <br>
-    Oh I just want him for my own more than you could ever know
-    <br>
-    Make my wish come true
-    <br>
-    Baby all I want for Christmas is you</p>
+    <div id="page-wrapper">
+        <header id="main-header">
+            <hgroup>
+                <i>
+                    <h1 class="master-title"><ins>MusicStory</ins></h1>
+                </i>
+                <br>
+                <h2 class="master-description">오늘 듣기 좋은 노래를 추천해드려요! 🎄</h2>
+            </hgroup>
+        </header>
+
+        <!-- Navigation -->
+        <nav id="main-navigation">
+            <div class="pull-left">
+                <ul class="outer-menu">
+                    <li class="outer-menu-item">
+                        <span class="menu-title" onclick="location.href='../index.html'">홈</span>
+                    </li>
+                    <li class="outer-menu-item">
+                        <span class="menu-title">장르</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="../genre/index-1.html">장르별 Music</a></li>
+                        </ul>
+                    </li>
+                    <li class="outer-menu-item">
+                        <span class="menu-title">주제별</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="../theme/index-2.html">주제별 Music</a></li>
+                        </ul>
+                    </li>
+                    <li class="outer-menu-item">
+                        <span class="menu-title">신곡</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="../pages/IN.html">국내</a></li>
+                            <li class="inner-menu-item"><a href="../pages/OUT.html">해외</a></li>
+                        </ul>
+                    </li>
+                    <li class="outer-menu-item">
+                        <span class="menu-title">추천</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="../pages/Re.html">사람들이 추천하는 노래는?!</a></li>
+                            <li class="inner-menu-item"><a href="../pages/Top10.html">이달의 음악 TOP10</a></li>
+                            <li class="inner-menu-item"><a href="../pages/Today.html">오늘의 음악</a></li>
+                        </ul>
+                    </li>
+                    <li class="outer-menu-item">
+                        <span class="menu-title">노래투표</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="../pages/vote.html">투표하기</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="pull-right">
+                <div class="search-bar">
+                    <form>
+                        <input type="text" class="input-search">
+                        <input type="submit" class="input-search-submit" value="검색">
+                    </form>
+                </div>
+            </div>
+        </nav>
+
+        <div id="content" style="display: block; max-width: 800px; margin: 0 auto;">
+            <article>
+                <div class="article-header">
+                    <h1 class="article-title">🎵 오늘의 추천 음악</h1>
+                </div>
+                <div class="article-body">
+                    <div class="lyrics-container">
+                        <h2 class="lyrics-title">All I Want for Christmas Is YOU</h2>
+                        <h3 class="lyrics-artist">- Mariah Carey -</h3>
+
+                        <div class="usage-section">>>> 가사</div>
+
+                        <div class="lyrics-text">
+                            <p>I don′t want a lot for Christmas<br>
+                                난 크리스마스에 많은 걸 원하지 않아<br>
+                                There′s just one thing I need<br>
+                                내게 필요한 건 단 한가지 뿐<br>
+                                I don′t care about the presents underneath the Christmas tree<br>
+                                크리스마스 트리 아래 선물 따윈 관심 없어요<br>
+                                I just want you for my own more than you could ever know<br>
+                                당신이 알고 있는 것보다 더 당신을 원해요<br>
+                                Make my wish come true<br>
+                                소원을 빌어<br>
+                                All I want for Christmas Is you<br>
+                                내가 크리스마스에 원하는건 당신뿐</p>
+
+                            <p>I don′t want a lot for Christmas<br>
+                                There's just one thing I need<br>
+                                (and I)I don′t care about presents underneath the Christmas tree<br>
+                                I don′t need to hang my stocking there upon the fireplace<br>
+                                난 벽난로 위에 내 양말을 걸어 놓을 필요 없어<br>
+                                Santa Claus won′t make me happy with a toy on Christmas day<br>
+                                산타클로스 할아버지도 크리스마스 장난감으로 날 기쁘게 만들 수 없을 거야<br>
+                                I just want you for my own more than you could ever know<br>
+                                Make my wish come true<br>
+                                All I want for Christmas is you<br>
+                                You baby</p>
+
+                            <p>I won′t ask for much this Christmas<br>
+                                난 이번 크리스마스에 많은 걸 요구하지 않아<br>
+                                I won′t even wish for snow<br>
+                                난 눈을 내려달라고 빌지도 않을 거야<br>
+                                (and I)I′m just gonna keep on waiting underneath the mistletoe<br>
+                                난 그냥 미슬토우 밑에서 계속 기다리기만 할 거에요<br>
+                                I won′t make a list and send it to the North Pole for Saint Nick<br>
+                                난 북극에 있는 산타크로스(성니콜라스)에게 선물 목록을 만들어 보내지도 않을 거야<br>
+                                I won′t even stay awake to hear those magic reindeer click<br>
+                                난 순록의 발 소릴 들으려 깨어있지도 않을 거야<br>
+                                Cause I just want you here tonight holding on to me so tight<br>
+                                난 바로 오늘 밤 여기서 당신을 안아주고 싶으니까<br>
+                                What more can I do<br>
+                                내가 뭘 더 할 수 있을까요<br>
+                                Baby all I want for Christmas is you<br>
+                                You...(baby)</p>
+
+                            <p>All the lights are shining so brightly everywhere<br>
+                                모든 빛이 모든 곳에서 밝게 빛나고 있어<br>
+                                And the sound of children′s laughter fills the air<br>
+                                어린 아이들의 웃음 소리가 하늘을 가득 채워요<br>
+                                And everyone is singing<br>
+                                모두가 노랠 부르고 있죠<br>
+                                I hear those sleigh bells ringing Santa won′t you bring me the one I really need<br>
+                                산타할어버지 내게 정말로 필요한 사람을 데려다주시지 않으실래요?<br>
+                                won′t you please bring my baby to me quickly<br>
+                                내 사랑을 제발 데려와 주시지 않으실래요?</p>
+
+                            <p>Oh I don′t want a lot for Christmas<br>
+                                This is all I′m asking for<br>
+                                내가 원하는 건 이것 뿐<br>
+                                I just wanna see my baby standing right outside my door<br>
+                                난 그저 내 현관문 밖에 서 있을 내 사랑을 보고 싶을 뿐이야<br>
+                                Oh I just want him for my own more than you could ever know<br>
+                                Make my wish come true<br>
+                                Baby all I want for Christmas is you</p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </div>
+
+        <footer id="main-footer">
+            <a href="../pages/Introduce.html">MusicStory에 대해서 궁금하다면?</a>
+            <br>
+            <a href="#">Created by 행정학과, 1반, 20180648, 김지은</a>
+        </footer>
+    </div>
 </body>
+
 </html>

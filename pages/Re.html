@@ -1,25 +1,192 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>사람들이 추천하는 노래</title>
+    <link rel="stylesheet" href="../css/style.css">
     <style>
-        h1 {
-            color : black;
-            text-shadow: 5px 5px 5px palevioletred;
+        .page-title-accent {
+            text-shadow: 2px 2px 0px palevioletred;
+        }
+
+        /* Form Container Styling */
+        .form-container {
+            background: white;
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 10px 25px rgba(255, 182, 193, 0.2);
+            border: 2px solid #FFF0F5;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* Textarea Styling */
+        textarea {
+            width: 100%;
+            padding: 15px;
+            border: 2px solid #eee;
+            border-radius: 15px;
+            font-size: 1rem;
+            resize: vertical;
+            transition: all 0.3s;
+            font-family: inherit;
+            background-color: #FAFAFA;
+            margin-bottom: 20px;
+            box-sizing: border-box;
+            /* Ensure padding doesn't affect width */
+        }
+
+        textarea:focus {
+            outline: none;
+            border-color: #FFB6C1;
+            background-color: #FFF;
+            box-shadow: 0 0 10px rgba(255, 182, 193, 0.3);
+        }
+
+        /* Cute Submit Button Styling */
+        .submit-btn {
+            background: linear-gradient(45deg, #FF9A9E 0%, #FECFEF 99%, #FECFEF 100%);
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            width: 100%;
+            border-radius: 50px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            cursor: pointer;
+            box-shadow: 0 5px 15px rgba(255, 154, 158, 0.4);
+            transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .submit-btn:hover {
+            transform: translateY(-3px) scale(1.02);
+            box-shadow: 0 8px 25px rgba(255, 154, 158, 0.6);
+            filter: brightness(1.05);
+        }
+
+        .submit-btn:active {
+            transform: translateY(-1px);
         }
     </style>
 </head>
+
 <body>
-    <h1>추천하는 노래</h1>
-    <form>
-        <table>
-        <tr>
-        <td>댓글:<td>
-        <td><textarea id="comment" name="comment" rows="4" cols="50" required></textarea></td>
-        </tr>
-        <td><input type="submit" value="댓글 남기기"></td>
-        </tr>
-        </table>
-    </form>
+    <div id="page-wrapper">
+        <header id="main-header">
+            <hgroup>
+                <i>
+                    <h1 class="master-title"><ins>MusicStory</ins></h1>
+                </i>
+                <br>
+                <h2 class="master-description">지금 듣고 있는 그 노래, 추천해주세요! 🎧</h2>
+            </hgroup>
+        </header>
+
+        <!-- Navigation -->
+        <nav id="main-navigation">
+            <div class="pull-left">
+                <ul class="outer-menu">
+                    <li class="outer-menu-item">
+                        <span class="menu-title" onclick="location.href='../index.html'">홈</span>
+                    </li>
+                    <li class="outer-menu-item">
+                        <span class="menu-title">장르</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="../genre/index-1.html">장르별 Music</a></li>
+                        </ul>
+                    </li>
+                    <li class="outer-menu-item">
+                        <span class="menu-title">주제별</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="../theme/index-2.html">주제별 Music</a></li>
+                        </ul>
+                    </li>
+                    <li class="outer-menu-item">
+                        <span class="menu-title">신곡</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="../pages/IN.html">국내</a></li>
+                            <li class="inner-menu-item"><a href="../pages/OUT.html">해외</a></li>
+                        </ul>
+                    </li>
+                    <li class="outer-menu-item">
+                        <span class="menu-title">추천</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="../pages/Re.html">사람들이 추천하는 노래는?!</a></li>
+                            <li class="inner-menu-item"><a href="../pages/Top10.html">이달의 음악 TOP10</a></li>
+                            <li class="inner-menu-item"><a href="../pages/Today.html">오늘의 음악</a></li>
+                        </ul>
+                    </li>
+                    <li class="outer-menu-item">
+                        <span class="menu-title">노래투표</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="../pages/vote.html">투표하기</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="pull-right">
+                <div class="search-bar">
+                    <form>
+                        <input type="text" class="input-search">
+                        <input type="submit" class="input-search-submit" value="검색">
+                    </form>
+                </div>
+            </div>
+        </nav>
+
+        <div id="content" style="display: block; max-width: 800px; margin: 0 auto;">
+            <article>
+                <div class="article-header">
+                    <h1 class="article-title page-title-accent">🎤 여러분의 추천곡을 남겨주세요</h1>
+                </div>
+                <div class="article-body">
+                    <div class="form-container">
+                        <form>
+                            <label for="comment"
+                                style="display:block; margin-bottom:15px; font-weight:bold; color:#555; font-size:1.1rem;">추천
+                                멘트 💬</label>
+                            <textarea id="comment" name="comment" rows="5"
+                                placeholder="가수 - 노래제목 위주로 남겨주세요!&#10;예) 블랙핑크 - 뛰어, 이 노래 들으면 신나요! 🖤🩷"
+                                required></textarea>
+
+                            <!-- Updated Button -->
+                            <button type="submit" class="submit-btn">
+                                <span>댓글 남기기</span>
+                                <span>❤️</span>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </article>
+        </div>
+
+        <footer id="main-footer">
+            <a href="../pages/Introduce.html">MusicStory에 대해서 궁금하다면?</a>
+            <br>
+            <a href="#">Created by 행정학과, 1반, 20180648, 김지은</a>
+        </footer>
+    </div>
+    <script>
+        // Use specific selector to avoid conflict with search form
+        document.querySelector('.form-container form').addEventListener('submit', function (e) {
+            e.preventDefault(); // Prevent actual form submission
+
+            const comment = document.getElementById('comment').value;
+
+            if (comment.trim()) {
+                // Save to localStorage
+                localStorage.setItem('myMusicRecomment', comment);
+
+                alert('추천 멘트가 등록되었습니다! \n홈 화면에서 "나의 추천곡"을 확인해보세요 📢');
+            } else {
+                alert('추천 멘트를 입력해주세요!');
+            }
+        });
+    </script>
 </body>
+
 </html>

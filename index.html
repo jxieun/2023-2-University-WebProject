@@ -63,15 +63,16 @@
                         <span class="menu-title">노래투표</span>
                         <ul class="inner-menu">
                             <li class="inner-menu-item"><a href="./pages/vote.html">투표하기</a></li>
+                        </ul>
                     </li>
                 </ul>
             </div>
             <div class="pull-right">
                 <div class="search-bar">
-                    <from>
+                    <form>
                         <input type="text" class="input-search">
                         <input type="submit" class="input-search-submit" value="검색">
-                    </from>
+                    </form>
                 </div>
             </div>
         </nav>
@@ -79,7 +80,7 @@
             <section id="main-section">
                 <article>
                     <div class="article-header">
-                        <h1 class="article-title">국내 신곡</h1>>
+                        <h1 class="article-title">국내 신곡</h1>
                     </div>
                     <div class="article-body">
                         <img src="Music1.PNG" width="300">
@@ -122,6 +123,30 @@
                 </article>
             </section>
             <aside id="main-aside">
+                <!-- Added "My Pick" Section -->
+                <div class="aside-list" id="my-pick-section"
+                    style="display:none; background-color: #FFF0F5; border: 2px dashed #FF69B4;">
+                    <h3>💖 내가 투표한 곡</h3>
+                    <br>
+                    <ul>
+                        <li><span id="my-pick-text" style="font-weight:bold; color:#C2185B;"></span></li>
+                    </ul>
+                </div>
+
+                <!-- Moved "My Recommendation" Section to Top -->
+                <div class="aside-list" id="my-recomment-section"
+                    style="display:none; background-color: #F0F8FF; border: 2px dashed #87CEFA; margin-bottom:15px;">
+                    <h3>📢 나의 추천곡</h3>
+                    <br>
+                    <ul>
+                        <li>
+                            <p id="my-recomment-text"
+                                style="font-weight:bold; color:#4682B4; white-space: pre-wrap; word-break: break-all;">
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+
                 <div class="aside-list">
                     <h3>오늘의 음악 추천 투표</h3>
                     <br>
@@ -129,6 +154,7 @@
                         <li><a href="./pages/vote.html">투표바로가기</a></li>
                     </ul>
                 </div>
+                <!-- ... (rest of aside) ... -->
                 <div class="aside-list">
                     <h3>오늘의 음악</h3>
                     <br>
@@ -169,9 +195,37 @@
             <a href="./pages/Introduce.html">MusicStory에 대해서 궁금하다면?</a>
             <br>
             <a href="#">Created by 행정학과, 1반, 20180648, 김지은</a>
+        </footer>
     </div>
-    </footer>
-    </div>
+
+    <!-- Consolidated Script for persistence display -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // My Pick (Vote)
+            const myVote = localStorage.getItem('myMusicVote');
+            if (myVote) {
+                const pickSection = document.getElementById('my-pick-section');
+                const pickText = document.getElementById('my-pick-text');
+
+                if (pickText && pickSection) {
+                    pickText.textContent = myVote;
+                    pickSection.style.display = 'block';
+                }
+            }
+
+            // My Recommendation (Comment)
+            const myRecomment = localStorage.getItem('myMusicRecomment');
+            if (myRecomment) {
+                const recommentSection = document.getElementById('my-recomment-section');
+                const recommentText = document.getElementById('my-recomment-text');
+
+                if (recommentText && recommentSection) {
+                    recommentText.textContent = myRecomment;
+                    recommentSection.style.display = 'block';
+                }
+            }
+        });
+    </script>
 </body>
 
 </html>

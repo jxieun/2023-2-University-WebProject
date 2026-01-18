@@ -1,120 +1,204 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>이달의 음악 TOP10</title>
+    <link rel="stylesheet" href="../css/style.css">
     <style>
-        h1 {
-            color : black;
-            background-color : yellow;
+        body {
+            background-image: url('../project_space_background.png');
+            /* Updated to generated image */
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center;
         }
-        td:hover { color: #FB6952;}
-        img {
-            float:left;
+
+        /* Make the page wrapper slightly transparent or adjust colors so background checks out */
+        #page-wrapper {
+            background: rgba(255, 255, 255, 0.95);
+            /* Slight transparency to see background hint? or just solid */
+        }
+
+        .chart-section-title {
+            font-size: 1.5rem;
+            color: var(--secondary-color);
+            margin: 40px 0 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px dashed #eee;
         }
     </style>
 </head>
-<body>
-    <img src = "Star.jpg" width="600">
-    <h1>이달의 음악 Top10</h1>
-    <table border="1">
-        <thead>
-            <tr>
-                <th></th>
-                <th>K-POP</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>1</td>
-                <td>Perfect Night-르세라핌</td>
-            </tr>
-            <tr>
-                <td>2</td>
-                <td>Drama-aespa</td>
-            </tr>
-            <tr>
-                <td>3</td>
-                <td>To.X-태연</td>
-            </tr>
-            <tr>
-                <td>4</td>
-                <td>Talk Saxy-RIIZE</td>
-            </tr>
-            <tr>
-                <td>5</td>
-                <td>Ditto-뉴진스</td>
-            </tr>
-            <tr>
-                <td>6</td>
-                <td>Seven-정국 & Latto</td>
-            </tr>
-            <tr>
-                <td>7</td>
-                <td>인사-범진</td>
-            </tr>
-            <tr>
-                <td>8</td>
-                <td>첫눈-EXO</td>
-            </tr>
-            <tr>
-                <td>9</td>
-                <td>Chill Kill-레드벨벳</td>
-            </tr>
-            <tr>
-                <td>10</td>
-                <td>ETA-뉴진스</td>
-        </tbody>
-    </table>
-    <hr>
-    <table border="1">
-        <thead>
-            <tr>
-                <th></th>
-                <th>POP</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>1</td>
-                <td>All l Want for Christmas Is YOU-Mariah Carey</td>
-            </tr>
-            <tr>
-                <td>2</td>
-                <td>Everybody (feat.Lil Uzi Vert)-Nicki Minaj</td>
-            </tr>
-            <tr>
-                <td>3</td>
-                <td>Lovin On Me-Jack Harlow</td>
-            </tr>
-            <tr>
-                <td>4</td>
-                <td>FTCU-Nicki Minaj</td>
-            </tr>
-            <tr>
-                <td>5</td>
-                <td>Santa Tell Me-Ariana Grande</td>
-            </tr>
-            <tr>
-                <td>6</td>
-                <td>Jingle Bell Rock-Bobby Helms</td>
-            </tr>
-            <tr>
-                <td>7</td>
-                <td>It's Beginning To Look a Lot Like Christmas-Michael Buble</td>
-            </tr>
-            <tr>
-                <td>8</td>
-                <td>Underneaath the Tree-Kelly Clarkson</td>
-            </tr>
-            <tr>
-                <td>9</td>
-                <td>Needle (feat.Drake)-Nicki Minaj</td>
-            </tr>
-            <tr>
-                <td>10</td>
-                <td>greedy-Tate McRae</td>
-        </tbody>
-    </table>
 
+<body>
+    <div id="page-wrapper">
+        <header id="main-header">
+            <hgroup>
+                <i>
+                    <h1 class="master-title"><ins>MusicStory</ins></h1>
+                </i>
+                <br>
+                <h2 class="master-description">이달의 가장 핫한 음악 TOP 10 🔥</h2>
+            </hgroup>
+        </header>
+
+        <!-- Navigation -->
+        <nav id="main-navigation">
+            <div class="pull-left">
+                <ul class="outer-menu">
+                    <li class="outer-menu-item">
+                        <span class="menu-title" onclick="location.href='../index.html'">홈</span>
+                    </li>
+                    <li class="outer-menu-item">
+                        <span class="menu-title">장르</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="../genre/index-1.html">장르별 Music</a></li>
+                        </ul>
+                    </li>
+                    <li class="outer-menu-item">
+                        <span class="menu-title">주제별</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="../theme/index-2.html">주제별 Music</a></li>
+                        </ul>
+                    </li>
+                    <li class="outer-menu-item">
+                        <span class="menu-title">신곡</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="../pages/IN.html">국내</a></li>
+                            <li class="inner-menu-item"><a href="../pages/OUT.html">해외</a></li>
+                        </ul>
+                    </li>
+                    <li class="outer-menu-item">
+                        <span class="menu-title">추천</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="../pages/Re.html">사람들이 추천하는 노래는?!</a></li>
+                            <li class="inner-menu-item"><a href="../pages/Top10.html">이달의 음악 TOP10</a></li>
+                            <li class="inner-menu-item"><a href="../pages/Today.html">오늘의 음악</a></li>
+                        </ul>
+                    </li>
+                    <li class="outer-menu-item">
+                        <span class="menu-title">노래투표</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="../pages/vote.html">투표하기</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="pull-right">
+                <div class="search-bar">
+                    <form>
+                        <input type="text" class="input-search">
+                        <input type="submit" class="input-search-submit" value="검색">
+                    </form>
+                </div>
+            </div>
+        </nav>
+
+        <div id="content" style="display: block; max-width: 800px; margin: 0 auto;">
+            <article>
+                <div class="article-header">
+                    <h1 class="article-title">🏆 이달의 명예의 전당</h1>
+                </div>
+                <!-- Image tag removed from here -->
+                <div class="article-body">
+
+                    <h2 class="chart-section-title">🇰🇷 K-POP TOP 10</h2>
+                    <ul class="chart-list">
+                        <li class="chart-item"><span class="chart-rank">1</span>
+                            <div class="chart-info"><span class="chart-title">Perfect Night</span><span
+                                    class="chart-artist">르세라핌</span></div>
+                        </li>
+                        <li class="chart-item"><span class="chart-rank">2</span>
+                            <div class="chart-info"><span class="chart-title">Drama</span><span
+                                    class="chart-artist">aespa</span></div>
+                        </li>
+                        <li class="chart-item"><span class="chart-rank">3</span>
+                            <div class="chart-info"><span class="chart-title">To.X</span><span
+                                    class="chart-artist">태연</span></div>
+                        </li>
+                        <li class="chart-item"><span class="chart-rank">4</span>
+                            <div class="chart-info"><span class="chart-title">Talk Saxy</span><span
+                                    class="chart-artist">RIIZE</span></div>
+                        </li>
+                        <li class="chart-item"><span class="chart-rank">5</span>
+                            <div class="chart-info"><span class="chart-title">Ditto</span><span
+                                    class="chart-artist">뉴진스</span></div>
+                        </li>
+                        <li class="chart-item"><span class="chart-rank">6</span>
+                            <div class="chart-info"><span class="chart-title">Seven</span><span class="chart-artist">정국
+                                    & Latto</span></div>
+                        </li>
+                        <li class="chart-item"><span class="chart-rank">7</span>
+                            <div class="chart-info"><span class="chart-title">인사</span><span
+                                    class="chart-artist">범진</span></div>
+                        </li>
+                        <li class="chart-item"><span class="chart-rank">8</span>
+                            <div class="chart-info"><span class="chart-title">첫눈</span><span
+                                    class="chart-artist">EXO</span></div>
+                        </li>
+                        <li class="chart-item"><span class="chart-rank">9</span>
+                            <div class="chart-info"><span class="chart-title">Chill Kill</span><span
+                                    class="chart-artist">레드벨벳</span></div>
+                        </li>
+                        <li class="chart-item"><span class="chart-rank">10</span>
+                            <div class="chart-info"><span class="chart-title">ETA</span><span
+                                    class="chart-artist">뉴진스</span></div>
+                        </li>
+                    </ul>
+
+                    <h2 class="chart-section-title">🌏 POP TOP 10</h2>
+                    <ul class="chart-list">
+                        <li class="chart-item"><span class="chart-rank">1</span>
+                            <div class="chart-info"><span class="chart-title">All I Want for Christmas Is
+                                    You</span><span class="chart-artist">Mariah Carey</span></div>
+                        </li>
+                        <li class="chart-item"><span class="chart-rank">2</span>
+                            <div class="chart-info"><span class="chart-title">Everybody (feat. Lil Uzi Vert)</span><span
+                                    class="chart-artist">Nicki Minaj</span></div>
+                        </li>
+                        <li class="chart-item"><span class="chart-rank">3</span>
+                            <div class="chart-info"><span class="chart-title">Lovin On Me</span><span
+                                    class="chart-artist">Jack Harlow</span></div>
+                        </li>
+                        <li class="chart-item"><span class="chart-rank">4</span>
+                            <div class="chart-info"><span class="chart-title">FTCU</span><span
+                                    class="chart-artist">Nicki Minaj</span></div>
+                        </li>
+                        <li class="chart-item"><span class="chart-rank">5</span>
+                            <div class="chart-info"><span class="chart-title">Santa Tell Me</span><span
+                                    class="chart-artist">Ariana Grande</span></div>
+                        </li>
+                        <li class="chart-item"><span class="chart-rank">6</span>
+                            <div class="chart-info"><span class="chart-title">Jingle Bell Rock</span><span
+                                    class="chart-artist">Bobby Helms</span></div>
+                        </li>
+                        <li class="chart-item"><span class="chart-rank">7</span>
+                            <div class="chart-info"><span class="chart-title">It's Beginning To Look a Lot Like
+                                    Christmas</span><span class="chart-artist">Michael Bublé</span></div>
+                        </li>
+                        <li class="chart-item"><span class="chart-rank">8</span>
+                            <div class="chart-info"><span class="chart-title">Underneath the Tree</span><span
+                                    class="chart-artist">Kelly Clarkson</span></div>
+                        </li>
+                        <li class="chart-item"><span class="chart-rank">9</span>
+                            <div class="chart-info"><span class="chart-title">Needle (feat. Drake)</span><span
+                                    class="chart-artist">Nicki Minaj</span></div>
+                        </li>
+                        <li class="chart-item"><span class="chart-rank">10</span>
+                            <div class="chart-info"><span class="chart-title">greedy</span><span
+                                    class="chart-artist">Tate McRae</span></div>
+                        </li>
+                    </ul>
+                </div>
+            </article>
+        </div>
+
+        <footer id="main-footer">
+            <a href="../pages/Introduce.html">MusicStory에 대해서 궁금하다면?</a>
+            <br>
+            <a href="#">Created by 행정학과, 1반, 20180648, 김지은</a>
+        </footer>
+    </div>
 </body>
+
 </html>
