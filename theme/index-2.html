@@ -1,134 +1,237 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>주제별</title>
-    <style>
-    h1 { 
-        color : #002050; 
-        text-shadow: 5px 5px 5px orange;
-
-    }
-    h2 { color : #00FEEE ;}
-    p { color : #CDFE00;}
-    body {
-            background-image: url('Pink.jpg');
-            background-size: 100% 80%;
-            background-repeat: no-repeat;
-            background-attachment: right;
-            background-attachment: fixed;
-            background-position: 0px 50%
-        }
-    .font_center { text-align: center;}
-    </style>
+    <link rel="stylesheet" href="../css/style.css">
 </head>
+
 <body>
-    <h1 class = "font_center">휴식</h1>
-    <hr />
-    <h2 class = "font_center">Memories</h2>
-    <p class = "font_center">Maroon5</p>
-    <img src ="Rest1.PNG" width="400" /><br>
-    <h2 class = "font_center">Perfect</h2>
-    <p class = "font_center">Ed Sheeran</p>
-    <img src ="Rest2.PNG" width="400" /><br>
-    <h2 class = "font_center">GHOST TOWN</h2>
-    <p class = "font_center">Benson Boone</p>
-    <img src ="Rest3.PNG" width="400" /><br>
-    <h2 class = "font_center">Rain</h2>
-    <p class = "font_center">태연</p>
-    <img src ="Rest4.PNG" width="400" /><br>
-    <h2 class = "font_center">Goodbye</h2>
-    <p class = "font_center">박효신</p>
-    <img src ="Rest5.PNG" width="400" /><br>
+    <div id="page-wrapper">
+        <header id="main-header">
+            <hgroup>
+                <i>
+                    <h1 class="master-title"><ins>MusicStory</ins></h1>
+                </i>
+                <br>
+                <h2 class="master-description">주제별 음악 추천 🎵</h2>
+            </hgroup>
+        </header>
 
-    <h1 class = "font_center">숙면</h1>
-    <hr />
-    <h2 class = "font_center">혼자두지마</h2>
-    <p class = "font_center">백예린</p>
-    <img src ="Sleep1.jpg" width="400" /><br>
-    <h2 class = "font_center">Gone</h2>
-    <p class = "font_center">ROSÉ</p>
-    <img src ="Sleep2.jpg" width="400" /><br>
-    <h2 class = "font_center">Best Part (feat. H.E.R.)</h2>
-    <p class = "font_center">Daniel Caesar</p>
-    <img src ="Sleep3.jpg" width="400" /><br>
-    <h2 class = "font_center">Someone you loved</h2>
-    <p class = "font_center">Lewis Capaldi</p>
-    <img src ="Sleep4.jpg" width="400" /><br>
-    <h2 class = "font_center">Someone I Used to Know</h2>
-    <p class = "font_center">Loving Caliber</p>
-    <img src ="Sleep5.jpg" width="400" /><br>
+        <!-- Navigation (Simplified for sub-pages) -->
+        <nav id="main-navigation" style="justify-content: center;">
+            <a href="../index.html" class="menu-title" style="background: var(--primary-color); color: white;">🏠 홈으로
+                돌아가기</a>
+        </nav>
 
-    <h1 class = "font_center">여행</h1>
-    <hr />
-    <h2 class = "font_center">운전만해(We Ride)</h2>
-    <p class = "font_center">브레이브걸스(Brave Girls)</p>
-    <img src ="Trip1.jpg" width="400" /><br>
-    <h2 class = "font_center">Perfect Night</h2>
-    <p class = "font_center">르세라핌</p>
-    <img src ="Trip2.jpg" width="400" /><br>
-    <h2 class = "font_center">Permission to Dance</h2>
-    <p class = "font_center">방탄소년단</p>
-    <img src ="Trip3.jpg" width="400" /><br>
-    <h2 class = "font_center">Do You Love Me</h2>
-    <p class = "font_center">2NE1</p>
-    <img src ="Trip4.jpg" width="400" /><br>
-    <h2 class = "font_center">아주 NICE</h2>
-    <p class = "font_center">세븐틴</p>
-    <img src ="Trip5.jpg" width="400" /><br>
+        <div id="content" style="display: block;">
 
-    <h1 class = "font_center">행복</h1>
-    <hr />
-    <h2 class = "font_center">음악의 신</h2>
-    <p class = "font_center">세븐틴</p>
-    <img src ="Happy1.PNG" width="400" /><br>
-    <h2 class = "font_center">ETA</h2>
-    <p class = "font_center">뉴진스</p>
-    <img src ="Happy2.PNG" width="400" /><br>
-    <h2 class = "font_center">LOVE DIVE</h2>
-    <p class = "font_center">아이브</p>
-    <img src ="Happy3.jpg" width="400" /><br>
-    <h2 class = "font_center">Dun Dun Dance</h2>
-    <p class = "font_center">오마이걸</p>
-    <img src ="Happy4.jpg" width="400" /><br>
-    <h2 class = "font_center">Love Lee</h2>
-    <p>악뮤</p>
-    <img src ="Happy5.PNG" width="400" /><br>
-   
-    <h1 class = "font_center">슬픔</h1>
-    <hr />
-    <h2 class = "font_center">Dangerously</h2>
-    <p class = "font_center">Charlie Puth</p>
-    <img src ="Sad1.jpg" width="400" /><br>
-    <h2 class = "font_center">Best Mistake(feat.Big Sean)</h2>
-    <p class = "font_center">Ariana Grande</p>
-    <img src ="Sad2.jpg" width="400" /><br>
-    <h2 class = "font_center">Tattoo</h2>
-    <p class = "font_center">Loreen</p>
-    <img src ="Sad3.jpg" width="400" /><br>
-    <h2 class = "font_center">봄날</h2>
-    <p class = "font_center">방탄소년단</p>
-    <img src ="Sad4.jpg" width="400" /><br>
-    <h2 class = "font_center">The Happiest Girl</h2>
-    <p class = "font_center">BLACKPINK</p>
-    <img src ="Sad5.PNG" width="400" /><br>
-  
-    <h1 class = "font_center">운동</h1>
-    <hr />
-    <h2 class = "font_center">Fantastic Baby</h2>
-    <p class = "font_center">BIG BANG</p>
-    <img src ="Exercise1.jpg" width="400" /><br>
-    <h2 class = "font_center">Rookie</h2>
-    <p class = "font_center">레드벨벳</p>
-    <img src ="Exercise2.jpg" width="400" /><br>
-    <h2 class = "font_center">Bad News</h2>
-    <p class = "font_center">KISS OF LIFE</p>
-    <img src ="Exercise3.jpg" width="400" /><br>
-    <h2 class = "font_center">Fast Forward</h2>
-    <p class = "font_center">전소미</p>
-    <img src ="Exercise4.jpg" width="400" /><br>
-    <h2 class = "font_center">Dream Girl</h2>
-    <p class = "font_center">SHINee</p>
-    <img src ="Exercise5.jpg" width="400" /><br>
-   
+            <article>
+                <div class="article-header">
+                    <h1 class="article-title">☕ 휴식 (Rest)</h1>
+                </div>
+                <div class="horizontal-scroll-container">
+                    <div class="scroll-item">
+                        <img src="Rest1.PNG" />
+                        <h3>Memories</h3>
+                        <p>Maroon5</p>
+                    </div>
+                    <div class="scroll-item">
+                        <img src="Rest2.PNG" />
+                        <h3>Perfect</h3>
+                        <p>Ed Sheeran</p>
+                    </div>
+                    <div class="scroll-item">
+                        <img src="Rest3.PNG" />
+                        <h3>GHOST TOWN</h3>
+                        <p>Benson Boone</p>
+                    </div>
+                    <div class="scroll-item">
+                        <img src="Rest4.PNG" />
+                        <h3>Rain</h3>
+                        <p>태연</p>
+                    </div>
+                    <div class="scroll-item">
+                        <img src="Rest5.PNG" />
+                        <h3>Goodbye</h3>
+                        <p>박효신</p>
+                    </div>
+                </div>
+            </article>
+
+            <article>
+                <div class="article-header">
+                    <h1 class="article-title">🌙 숙면 (Sleep)</h1>
+                </div>
+                <div class="horizontal-scroll-container">
+                    <div class="scroll-item">
+                        <img src="Sleep1.jpg" />
+                        <h3>혼자두지마</h3>
+                        <p>백예린</p>
+                    </div>
+                    <div class="scroll-item">
+                        <img src="Sleep2.jpg" />
+                        <h3>Gone</h3>
+                        <p>ROSÉ</p>
+                    </div>
+                    <div class="scroll-item">
+                        <img src="Sleep3.jpg" />
+                        <h3>Best Part</h3>
+                        <p>Daniel Caesar</p>
+                    </div>
+                    <div class="scroll-item">
+                        <img src="Sleep4.jpg" />
+                        <h3>Someone you loved</h3>
+                        <p>Lewis Capaldi</p>
+                    </div>
+                    <div class="scroll-item">
+                        <img src="Sleep5.jpg" />
+                        <h3>Someone I Used to Know</h3>
+                        <p>Loving Caliber</p>
+                    </div>
+                </div>
+            </article>
+
+            <article>
+                <div class="article-header">
+                    <h1 class="article-title">✈️ 여행 (Trip)</h1>
+                </div>
+                <div class="horizontal-scroll-container">
+                    <div class="scroll-item">
+                        <img src="Trip1.jpg" />
+                        <h3>운전만해</h3>
+                        <p>브레이브걸스</p>
+                    </div>
+                    <div class="scroll-item">
+                        <img src="Trip2.jpg" />
+                        <h3>Perfect Night</h3>
+                        <p>르세라핌</p>
+                    </div>
+                    <div class="scroll-item">
+                        <img src="Trip3.jpg" />
+                        <h3>Permission to Dance</h3>
+                        <p>방탄소년단</p>
+                    </div>
+                    <div class="scroll-item">
+                        <img src="Trip4.jpg" />
+                        <h3>Do You Love Me</h3>
+                        <p>2NE1</p>
+                    </div>
+                    <div class="scroll-item">
+                        <img src="Trip5.jpg" />
+                        <h3>아주 NICE</h3>
+                        <p>세븐틴</p>
+                    </div>
+                </div>
+            </article>
+
+            <article>
+                <div class="article-header">
+                    <h1 class="article-title">🥰 행복 (Happy)</h1>
+                </div>
+                <div class="horizontal-scroll-container">
+                    <div class="scroll-item">
+                        <img src="Happy1.PNG" />
+                        <h3>음악의 신</h3>
+                        <p>세븐틴</p>
+                    </div>
+                    <div class="scroll-item">
+                        <img src="Happy2.PNG" />
+                        <h3>ETA</h3>
+                        <p>뉴진스</p>
+                    </div>
+                    <div class="scroll-item">
+                        <img src="Happy3.jpg" />
+                        <h3>LOVE DIVE</h3>
+                        <p>아이브</p>
+                    </div>
+                    <div class="scroll-item">
+                        <img src="Happy4.jpg" />
+                        <h3>Dun Dun Dance</h3>
+                        <p>오마이걸</p>
+                    </div>
+                    <div class="scroll-item">
+                        <img src="Happy5.PNG" />
+                        <h3>Love Lee</h3>
+                        <p>악뮤</p>
+                    </div>
+                </div>
+            </article>
+
+            <article>
+                <div class="article-header">
+                    <h1 class="article-title">💧 슬픔 (Sad)</h1>
+                </div>
+                <div class="horizontal-scroll-container">
+                    <div class="scroll-item">
+                        <img src="Sad1.jpg" />
+                        <h3>Dangerously</h3>
+                        <p>Charlie Puth</p>
+                    </div>
+                    <div class="scroll-item">
+                        <img src="Sad2.jpg" />
+                        <h3>Best Mistake</h3>
+                        <p>Ariana Grande</p>
+                    </div>
+                    <div class="scroll-item">
+                        <img src="Sad3.jpg" />
+                        <h3>Tattoo</h3>
+                        <p>Loreen</p>
+                    </div>
+                    <div class="scroll-item">
+                        <img src="Sad4.jpg" />
+                        <h3>봄날</h3>
+                        <p>방탄소년단</p>
+                    </div>
+                    <div class="scroll-item">
+                        <img src="Sad5.PNG" />
+                        <h3>The Happiest Girl</h3>
+                        <p>BLACKPINK</p>
+                    </div>
+                </div>
+            </article>
+
+            <article>
+                <div class="article-header">
+                    <h1 class="article-title">🏋️‍♀️ 운동 (Exercise)</h1>
+                </div>
+                <div class="horizontal-scroll-container">
+                    <div class="scroll-item">
+                        <img src="Exercise1.jpg" />
+                        <h3>Fantastic Baby</h3>
+                        <p>BIG BANG</p>
+                    </div>
+                    <div class="scroll-item">
+                        <img src="Exercise2.jpg" />
+                        <h3>Rookie</h3>
+                        <p>레드벨벳</p>
+                    </div>
+                    <div class="scroll-item">
+                        <img src="Exercise3.jpg" />
+                        <h3>Bad News</h3>
+                        <p>KISS OF LIFE</p>
+                    </div>
+                    <div class="scroll-item">
+                        <img src="Exercise4.jpg" />
+                        <h3>Fast Forward</h3>
+                        <p>전소미</p>
+                    </div>
+                    <div class="scroll-item">
+                        <img src="Exercise5.jpg" />
+                        <h3>Dream Girl</h3>
+                        <p>SHINee</p>
+                    </div>
+                </div>
+            </article>
+
+        </div>
+
+        <footer id="main-footer">
+            <a href="../pages/Introduce.html">MusicStory에 대해서 궁금하다면?</a>
+            <br>
+            <a href="#">Created by 행정학과, 1반, 20180648, 김지은</a>
+        </footer>
+    </div>
 </body>
+
 </html>
