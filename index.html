@@ -15,8 +15,11 @@
         });
     </script>
     <script>
-        //경고창 출력 p.60
-        alert('♥MusicStory에 온 걸 환영합니다♥');
+        //경고창 출력 p.60 (첫 방문 시에만 출력)
+        if (!localStorage.getItem('visited')) {
+            alert('♥MusicStory에 온 걸 환영합니다♥');
+            localStorage.setItem('visited', 'true');
+        }
     </script>
 </head>
 
