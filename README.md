@@ -1,4 +1,6 @@
 # MusicStory 🎵
+<img width="281" height="68" alt="스크린샷 2026-01-18 오전 11 59 32" src="https://github.com/user-attachments/assets/8b1eeffe-a3c9-4bfc-808c-ce7c936ba05b" />
+
 
 > **웹표준기술 수행과제** - 음악을 좋아하는 누구나 즐길 수 있는 블로그
 
