@@ -43,6 +43,8 @@ web/
     ├── recommend/      # 추천/TOP10/오늘의 음악
     ├── vote/           # 투표 페이지
     └── about/          # 사이트 소개 (Introduce.html)
+└── scripts/            # 유지보수 및 자동화 스크립트
+    └── refactor_paths.py # 프로젝트 구조 변경 시 경로 자동 수정 도구
 ```
 
 ## 💡 배운 점 & 개선 경험
