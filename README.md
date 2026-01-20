@@ -10,13 +10,26 @@
 **MusicStory**는 HTML/CSS/jQuery의 기초를 다지기 위해 제작한 정적 웹사이트입니다.  
 다양한 장르의 음악을 소개하고, 추천하며, 투표할 수 있는 커뮤니티형 블로그를 주제로 하였습니다.
 
-## 🛠 사용 기술 (Tech Stack)
-- **HTML5**: 시멘틱 태그(`header`, `nav`, `section`, `article`, `footer` 등)를 활용한 구조 설계
+## ⚙️ 개발 환경 (Development Environment)
+
+| Category | Tech Stack |
+| :--- | :--- |
+| **Language** | HTML5, CSS3, JavaScript (ES6+), Python |
+| **Library** | jQuery 3.6.4 |
+| **Server** | GitHub Pages (Static Hosting) |
+| **Database** | Web Storage API (LocalStorage) |
+| **IDE** | Visual Studio Code |
+| **Version Control** | Git, GitHub |
+
+### 🔍 기술 활용 상세
+- **HTML5**: 시멘틱 태그(`header`, `nav`, `section`, `article`, `footer` 등)를 활용한 웹 표준 준수 및 구조 설계
 - **CSS3**:
-    - `float` 및 `flex` 속성을 이용한 레이아웃 구성
-    - `position` (relative, absolute)을 이용한 드롭다운 메뉴 구현
-    - 다양한 스타일링 및 마우스 호버 효과
-- **jQuery**: 간단한 동적 기능 구현
+    - `float` 및 `flex` 속성을 이용한 반응형 레이아웃 구성
+    - `position` (relative, absolute)을 이용한 드롭다운 메뉴 인터랙션 구현
+    - `box-shadow`, `transition` 등을 활용한 세련된 UI 스타일링
+- **jQuery**: DOM 조작 및 동적 기능(이벤트 처리, UI 제어) 구현
+- **LocalStorage**: 브라우저 저장소를 활용한 데이터 영구 저장 (투표, 추천글 기능)
+- **Python**: 프로젝트 구조 리팩토링 및 대량의 파일 경로 일괄 수정을 위한 자동화 스크립트 제작
 
 ## ✨ 주요 기능
 - **드롭다운 네비게이션**: 마우스를 올리면 하위 메뉴가 나타나는 인터랙션
